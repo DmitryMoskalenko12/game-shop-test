@@ -1,0 +1,144 @@
+.card-content {
+  min-height: 1600px;
+  padding-top: 23px;
+  padding-bottom: 30px;
+  background: #E5E5E5;
+  &__arrow {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+  }
+  &__main, &__catalog, &__name-category, &__name-subcategory {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    &:hover {
+      color: #000000;
+    }
+  }
+  &__name-game {
+    font-weight: 400;
+    font-size: 14px;
+    color: grey;
+    text-decoration: none;
+    &:hover {
+      color: grey;
+    }
+  }
+  &__path-block {
+    width: 582px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title-game {
+    font-weight: 700;
+    font-size: 40px;
+    color: #2A2A2A;
+  }
+  &__product-wrap {
+    width: 100%;
+    margin-top: 20px;
+  }
+  &__carousel-bascet {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__carousel-wrap {
+    width: 712px;
+    min-height: 417px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__bask-propouse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media(max-width: 1199px){
+  .card-content {
+    min-height: 1600px;
+    &__carousel-wrap {
+      width: 569px;
+      min-height: 417px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &__title-game {
+      font-size: 35px;
+    }
+  }
+}
+@media(max-width: 991px){
+  .card-content {
+    min-height: 1485px;
+    &__carousel-wrap {
+      min-height: 429px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    &__product-wrap {
+      width: 98%;
+    }
+    &__title-game {
+      font-size: 35px;
+    }
+    &__title-game {
+      font-size: 27px;
+      text-align: center;
+    }
+    &__path-block {
+      width: 582px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
+}
+@media(max-width: 767px){
+  .card-content {
+    min-height: 1485px;
+    &__carousel-wrap {
+      width: 100%;
+      min-height: 429px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__carousel-bascet {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__product-wrap {
+      display: flex;
+      flex-direction: column;
+      width: 96%;
+    }
+    &__title-game {
+      margin-top: 30px;
+      font-size: 35px;
+      margin-right: 13px;
+    }
+    &__title-game {
+      font-size: 27px;
+      text-align: center;
+    }
+    &__path-block {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,546 @@
+.basket {
+  min-height: 430px;
+  padding: 23px 0px 85px 0px;
+  background: #E5E5E5;
+  &__path {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 158px;
+    height: 19px;
+  }
+  &__mainpage {
+    a {
+      font-weight: 400;
+      font-size: 18px;
+      color: #2A2A2A;
+      text-decoration: none;
+    }
+  }
+  &__arrow {
+    font-weight: 400;
+    font-size: 18px;
+    color: #2A2A2A;
+    text-decoration: none;
+  }
+  &__basketpage {
+    a {
+      font-weight: 400;
+      font-size: 16px;
+      color: rgba(42, 42, 42, 0.85);
+      text-decoration: none;
+    }
+  }
+  &__basketname {
+    font-weight: 700;
+    font-size: 32px;
+    color: #2A2A2A;
+  }
+  &__cardwrap {
+    display: grid;
+    grid-template-columns: 712px;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    row-gap: 34px;
+    margin-top: 21px;
+  }
+  &__allcontent {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__wrapimg {
+    width: 74px;
+    height: 84px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__name {
+    width: 212px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #2A2A2A;
+  }
+  &__price {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #2A2A2A;
+  }
+  &__calc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__plus {
+    font-weight: 700;
+    font-size: 22px;
+    color: #2A2A2A;
+    margin-right: 11px;
+    border: none;
+    background: transparent;
+  }
+  &__num {
+    font-weight: 700;
+    font-size: 22px;
+    color: #2A2A2A;
+  }
+  &__minus {
+    font-weight: 700;
+    font-size: 22px;
+    color: #2A2A2A;
+    margin-left: 11px;
+    border: none;
+    background: transparent;
+  }
+  &__delete {
+    width: 35px;
+    height: 25px;
+    border: none;
+    background: transparent;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 344px;
+    background: #FFFFFF;
+    box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+    border-radius: 9px;
+  }
+  &__finalprice {
+    font-weight: 700;
+    width: 255px;
+    font-size: 19px;
+    color: #2A2A2A;
+    margin-top: 36px;
+    margin-right: 63px;
+    span {
+      font-weight: 700;
+      font-size: 33px;
+      line-height: 22px;
+      color: #2A2A2A;
+    }
+  }
+  &__promodescr{
+    font-weight: 400;
+    font-size: 16px;
+    color: #2A2A2A;
+    margin-top: 18px;
+  }
+  &__wrapinput {
+    display: flex;
+    margin-top: 7px;
+   input {
+    width: 285px;
+    height: 34px;
+    border: 1px solid rgba(42, 42, 42, 0.25);
+    border-radius: 9px;
+   }
+  }
+  &__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    background: #CACACA;
+    border-radius: 9px;
+  }
+  &__buy {
+    width: 281px;
+    height: 49px;
+    background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+    border-radius: 9px;
+    border: none;
+    margin-top: 23px;
+    padding: 0px;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      font-weight: 700;
+      font-size: 22px;
+      text-decoration: none;
+      color: white;
+    }
+  }
+  &__oneclick {
+    width: 281px;
+    height: 49px;
+    border: 2px solid #F9A43F;
+    border-radius: 9px;
+    background: transparent;
+    font-weight: 700;
+    font-size: 22px;
+    color: #F9A43F;
+    margin-top: 14px;
+  }
+  &__for575 {
+    display: none;
+  }
+}
+@media(max-width: 1199px) {
+  .basket {
+    &__cardwrap {
+      grid-template-columns: 613px;
+    }
+    &__order {
+      width: 300px; 
+    }
+    &__name {
+      font-size: 21px;
+    }
+    &__finalprice {
+      width: 215px;
+      font-size: 17px;
+      span {
+        font-size: 29px;
+      }
+    }
+    &__wrapinput {
+     input {
+      width: 243px;
+     }
+    }
+    &__buy {
+      width: 243px
+    }
+    &__oneclick {
+      width: 243px;
+    }
+    &__for575 {
+      display: none;
+    }
+  }
+}
+@media(max-width: 991px) {
+  .basket {
+    &__cardwrap {
+      grid-template-columns: 444px;
+    }
+    &__order {
+      width: 243px; 
+      height: 260px;
+    }
+    &__name {
+      width: 150px;
+      font-size: 16px;
+    }
+    &__finalprice {
+      width: 157px;
+      font-size: 13px;
+      span {
+        font-size: 18px;
+      }
+    }
+    &__wrapinput {
+     input {
+      width: 188px;
+     }
+    }
+    &__buy {
+      width: 185px;
+      height: 38px;
+      margin-top: 17px;
+      a {
+        font-size: 17px;
+      }
+    }
+    &__oneclick {
+      width: 185px;
+      height: 38px;
+      font-size: 17px;
+      margin-top: 9px;
+    }
+    &__promodescr{
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    &__plus {
+      font-size: 19px;
+      margin-right: 5px;
+    }
+    &__num {
+      font-size: 19px;
+    }
+    &__minus {
+      font-size: 19px;
+      margin-left: 5px;
+    }
+    &__price {
+      font-size: 16px;
+    }
+    &__wrapimg {
+      width: 71px;
+      height: 57px;
+    }
+    &__basketname {
+      font-size: 27px;
+    }
+    &__basketpage {
+      a {
+        font-size: 14px;
+      }
+    }
+    &__mainpage {
+      a {
+        font-size: 16px;
+      }
+    }
+    &__delete {
+      width: 30px;
+      height: 24px;
+    }
+    &__arrow {
+      font-size: 16px;
+    }
+    &__for575 {
+      display: none;
+    }
+  }
+}
+@media(max-width: 767px) {
+  .basket {
+    &__cardwrap {
+      grid-template-columns: 455px;
+    }
+    &__allcontent {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+    &__order {
+      width: 325px; 
+      height: 290px;
+      margin-top: 15px;
+    }
+    &__name {
+      width: 150px;
+      font-size: 16px;
+    }
+    &__finalprice {
+      width: 215px;
+      font-size: 15px;
+    }
+    &__wrapinput {
+     input {
+      width: 244px;
+     }
+    }
+    &__buy {
+      width: 217px;
+      height: 48px;
+      margin-top: 20px;
+      a {
+        font-size: 20px;
+      }
+    }
+    &__oneclick {
+      width: 217px;
+      height: 48px;
+      font-size: 20px;
+      margin-top: 15px;
+    }
+    &__promodescr{
+      font-size: 15px;
+    }
+    &__basketname {
+      font-size: 27px;
+    }
+    &__for575 {
+      display: none;
+    }
+  }
+}
+@media(max-width: 575px) {
+  .basket {
+    &__cardwrap {
+      display: grid;
+      grid-template-columns: 280px;
+      grid-template-rows: auto;
+      grid-auto-rows: auto;
+      row-gap: 5px;
+      margin-top: 21px;
+    }
+    &__card {
+      display: grid;
+      grid-template-columns: 95px 167px;
+      grid-template-rows: 95px;
+      grid-auto-rows: 95px;
+      row-gap: 5px;
+    }
+    &__allcontent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0px;
+    }
+    &__for575 {
+      display: block;
+    }
+    &__path {
+      display: none;
+    }
+    &__basketname {
+      margin-top: 26px;
+      text-align: center;
+      font-size: 21px;
+    }
+    &__name {
+      width: 150px;
+      font-size: 16px;
+      display: none;
+    }
+    &__calc {
+      display: none;
+    }
+    &__price {
+      font-size: 16px;
+      display: none;
+    }
+    &__delete {
+      width: 30px;
+      height: 24px;
+      display: none;
+    }
+    &__name575 {
+      font-weight: 700;
+      font-size: 13px;
+      color: #2A2A2A;
+      text-align: right;
+    }
+    &__price575 {
+      font-weight: 700;
+      font-size: 14px;
+      color: #2A2A2A;
+      text-align: right;
+    }
+    &__delplusminus {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__calc575 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 25px;
+    }
+    &__delete575 {
+      width: 17px;
+      height: 17px;
+      img {
+        width: 17px;
+        height: 17px;
+        object-fit: cover;
+      }
+    }
+    &__plus575 {
+      font-weight: 700;
+      font-size: 16px;
+      color: #2A2A2A;
+      background: transparent;
+      border: none;
+    }
+    &__minus575 {
+      font-weight: 700;
+      font-size: 16px;
+      color: #2A2A2A;
+      background: transparent;
+      border: none;
+    }
+    &__num575 {
+      font-weight: 700;
+      font-size: 16px;
+      color: #2A2A2A;
+    }
+    &__delete575 {
+      width: 25px;
+      height: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+      border: none;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__order {
+      width: 290px;
+      height: 253px;
+    }
+    &__wrapinput {
+      position: relative;
+     input {
+      width: 245px;
+      height: 34px;
+     }
+    }
+    &__check {
+      position: absolute;
+      right: 0px;
+    }
+    &__finalprice {
+      width: 183px;
+    }
+    &__buy {
+      width: 245px;
+      height: 37px;
+      margin-top: 20px;
+      a {
+        font-size: 16px;
+      }
+    }
+    &__oneclick {
+      width: 245px;
+      height: 37px;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+  }
+}
+/* .post{
+  display: grid;
+  grid-template-columns: 712px;
+  grid-template-rows: auto;
+  grid-auto-rows: 84px;
+  row-gap: 34px;
+  margin-top: 21px;
+} */
+/* .post-enter {
+  transform: translateX(-350px);
+}
+.post-enter-active {
+  transform: translateX(0px);
+  transition: all 500ms ease-in;
+} */
+/* .post-exit {
+  opacity: 1;
+} */
+.post-exit-active {
+  opacity: 0;
+  /* transform: translateX(-350px); */
+  transition: all 400ms ease-in;
+}

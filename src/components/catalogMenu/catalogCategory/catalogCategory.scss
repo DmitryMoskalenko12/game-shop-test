@@ -1,0 +1,175 @@
+.catalog-category {
+  width: 100%;
+  &__category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 200px;
+    height: 22px;
+    font-weight: 700;
+    font-size: 19px;
+    color: #2A2A2A;
+    border: none;
+    background: transparent;
+    margin-top: 20px;
+    margin-left: 22px;
+    margin-bottom: 20px;
+    padding: 0px;
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        border-style: solid;
+        border-width: 0.15em 0.15em 0 0;
+        display: inline-block;
+        height: 0.70em;
+        transform: rotate(-45deg);
+        vertical-align: top;
+        width: 0.70em;
+        transition: 0.3s all;
+      }
+  }
+  &__category-active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 200px;
+    height: 22px;
+    font-weight: 700;
+    font-size: 19px;
+    color: #2A2A2A;
+    border: none;
+    background: transparent;
+    margin-top: 20px;
+    margin-left: 22px;
+    padding: 0px;
+    margin-bottom: 20px;
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0px;
+        border-style: solid;
+        border-width: 0.15em 0.15em 0 0;
+        display: inline-block;
+        height: 0.70em;
+        transform: rotate(135deg);
+        vertical-align: top;
+        width: 0.70em;
+        transition: 0.3s all;
+        top: 4px;
+      }
+  }
+  &__allcategory {
+    max-height: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, max-height 0.3s 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  &__active-category {
+    max-height: 758px;
+    opacity: 1;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s 0.3s ease-in-out;
+    pointer-events: all;
+  }
+  &__subcategory {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 187px;
+    min-height: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #2A2A2A;
+    border: none;
+    background: transparent;
+    margin-top: 11px;
+    margin-left: 34px;
+    text-align: left;
+    padding: 0;
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0px;
+      top: 11px;
+      border-style: solid;
+      border-width: 0.15em 0.15em 0 0;
+      display: inline-block;
+      height: 0.70em;
+      transform: rotate(-45deg);
+      vertical-align: top;
+      width: 0.70em;
+      transition: 0.3s all;
+    }
+  }
+  &__subcategory-active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 187px;
+    min-height: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #2A2A2A;
+    border: none;
+    background: transparent;
+    margin-top: 11px;
+    margin-left: 34px;
+    text-align: left;
+    padding: 0;
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0px;
+      top: 6px;
+      border-style: solid;
+      border-width: 0.15em 0.15em 0 0;
+      display: inline-block;
+      height: 0.70em;
+      transform: rotate(135deg);
+      vertical-align: top;
+      width: 0.70em;
+      transition: 0.3s all;
+    }
+  }
+  &__list {
+    max-height: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, max-height 0.3s 0.3s ease-in-out;
+    pointer-events: none;
+    padding-left: 64px;
+    list-style-type: none;
+  }
+  &__active-list {
+    max-height: 466px;
+    opacity: 1;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s 0.3s ease-in-out;
+    pointer-events: all;
+    padding-left: 64px;
+    list-style-type: none;
+  }
+  &__item {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(42, 42, 42, 0.85);
+    cursor: pointer;
+    text-decoration: none;
+   }
+   &__item-active {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    color: rgba(42, 42, 42, 0.85);
+    cursor: pointer;
+    text-decoration: none;
+   }
+   &__hr {
+    margin: 0px;
+    margin-top: 4px;
+  }
+  }

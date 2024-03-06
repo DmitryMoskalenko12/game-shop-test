@@ -1,0 +1,75 @@
+.catalog-main {
+  &__wrappath {
+    width: 306px;
+    height: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+  }
+  &__main, &__catalog {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    &:hover {
+      color: #000000;
+    }
+  }
+  &__arrow {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+  }
+  &__namegame {
+    font-weight: 400;
+    font-size: 14px;
+    color: grey;
+    text-decoration: none;
+    &:hover {
+      color: grey;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #000000;
+    margin-top: 9px;
+  }
+  &__wrap {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 21px;
+  }
+}
+@media(max-width: 991px) {
+  .catalog-main {
+    &__title {
+      font-size: 29px;
+    }
+  }
+}
+@media(max-width: 767px) {
+  .catalog-main {
+    &__title {
+      font-size: 17px;
+      text-align: center;
+      margin-right: -5px;
+      margin-top: 26px;
+    }
+    &__wrappath {
+      display: none;
+    }
+  }
+}
+@media(max-width: 575px) {
+  .catalog-main {
+    &__title {
+      margin-right: -12px;
+    }
+    &__wrappath {
+      display: none;
+    }
+  }
+}

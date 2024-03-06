@@ -1,0 +1,32 @@
+.catalog-header {
+  min-height: 234px;
+  padding-top: 47px;
+  padding-bottom: 76px;
+  background: url('../../../image/header.webp') center center/cover no-repeat;
+  &__title {
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFFFFF;
+  }
+  &__mini-title {
+    width: 313px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+}
+
+@media(max-width: 575px) {
+  .catalog-header {
+    padding-top: 60px;
+    &__title {
+      font-size: 19px;
+      text-align: center;
+    }
+    &__mini-title {
+      width: 300px;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}

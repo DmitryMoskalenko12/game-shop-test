@@ -1,0 +1,127 @@
+.catalog {
+  display: grid;
+  grid-template-columns: 255px 854px;
+  grid-template-rows: 395px;
+  background: #FFFBF8;
+  box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+  &__category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    border-right: 1px solid black;
+  }
+  &__closeall {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__close {
+    font-weight: 400;
+    font-size: 30px;
+    color: #2A2A2A;
+    margin-right: 18px;
+    padding-bottom: 5px;
+  }
+  &__hr {
+    width: 100%;
+    height: 1px;
+    background: black;
+  }
+  .start {
+    width: 100%;
+    padding-left: 30px;
+
+  }
+  &__link {
+    margin-top: 5px;
+    padding: 5px;
+    position: relative;
+    &:last-child {
+      &::after {
+        content: '>';
+        position: absolute;
+        right: 18px;
+        top: 18px;
+      }
+    }
+    &::after {
+      content: '>';
+      position: absolute;
+      right: 18px;
+    }
+    a {
+      font-weight: 700;
+      font-size: 16px;
+      color: #2A2A2A;
+      text-decoration: none;
+    }
+  }
+  .last {
+    display: block;
+    width: 159px;
+    height: 18px;
+    margin-bottom: 45px;
+  }
+  &__categoruclose {
+    font-weight: 700;
+    font-size: 16px;
+    color: #2A2A2A;
+  }
+  &__choice {
+    position: relative;
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      a {
+        font-weight: 700;
+        font-size: 16px;
+        color: #2A2A2A;
+        text-decoration: none;
+      }
+    }
+  }
+  &__titlechoice {
+    font-weight: 700;
+    font-size: 20px;
+    color: #2A2A2A;
+    margin-left: 30px;
+    margin-top: 17px;
+  }
+  &__wraplink {
+    display: grid;
+    grid-template-columns: minmax(260px, auto) minmax(190px, auto) minmax(225px, auto);
+    grid-template-rows: repeat(3, 30px);
+    column-gap: 58px;
+    row-gap: 5px;
+    margin-top: 17px;
+    margin-left: 30px;
+  }
+  &__loading, &__error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media(max-width: 991px){
+  .catalog {
+    grid-template-columns: 255px 500px;
+    &__wraplink {
+      grid-template-columns: minmax(270px, auto) minmax(170px, auto) ;
+      column-gap: 10px;
+      row-gap: 10px;
+      margin-left: 10px;
+    }
+    &__choice {
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+}
+}

@@ -1,0 +1,48 @@
+.little-carousel {
+  position: relative;
+  width: 85px;
+  height: 305px;
+  &__window {
+    width: 100%;
+    height: 100%;
+    margin-top: 43px;
+    overflow: hidden;
+  }
+  &__field {
+    display: flex;
+    flex-direction: column;
+  }
+  &__slide {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 25px;
+    background: #FFFFFF;
+    border: 1px solid rgba(217, 217, 217, 0.39);
+    border-radius: 9px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 9px;
+      object-fit: cover;
+    }
+  }
+  &__up {
+    position: absolute;
+    border: none;
+    top: -7px;
+    left: 20px;
+    background: transparent;
+  }
+  &__down {
+    position: absolute;
+    border: none;
+    bottom: -97px;
+    left: 20px;
+    background: transparent;
+  }
+}
+@media(max-width: 991px){
+  .little-carousel{
+     display: none;
+  }
+}

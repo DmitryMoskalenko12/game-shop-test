@@ -1,0 +1,134 @@
+.buy-carousel {
+  position: relative;
+  min-height: 545px;
+  padding: 0px 0px 85px 0px;
+  background: #E5E5E5;
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #2A2A2A;
+    text-align: center;
+  }
+  &__cont-wrap {
+    position: relative;
+  }
+  &__window {
+    width: 1110px;
+    height: 409px;
+    overflow: hidden;
+    margin: 0 auto;
+    background: transparent;
+  }
+  &__field {
+    display: flex;
+  }
+  &__prev {
+  position: absolute;
+  left: 40px;
+  top: 210px;
+  border: none;
+  background: transparent;
+  &::after {
+    content: url('../../icons/darkleft.png');
+  }
+  }
+  &__next {
+  position: absolute;
+  right: 40px;
+  top: 210px;
+  border: none;
+  background: transparent;
+  &::after {
+    content: url('../../icons/darkright.png');
+  }
+  }
+}
+@media(max-width: 1399px){
+  .buy-carousel{
+    &__prev {
+      left: -30px;
+      }
+      &__next {
+      right: -30px;
+  }
+}
+}
+@media(max-width: 1199px){
+  .buy-carousel{
+    &__title {
+      font-weight: 700;
+      font-size: 32px;
+      color: #2A2A2A;
+    }
+    &__window {
+      width: 780px;
+    }
+    &__prev {
+      left: 30px;
+      }
+      &__next {
+      right: 30px;
+  }
+}
+}
+@media(max-width: 991px){
+  .buy-carousel{
+    &__title {
+      font-weight: 700;
+      font-size: 32px;
+      color: #2A2A2A;
+      margin-bottom: 30px;
+    }
+    &__window {
+      width: 530px;
+    }
+    &__prev {
+      left: 35px;
+      }
+    &__next {
+    right: 35px;
+  }
+}
+}
+@media(max-width: 767px){
+  .buy-carousel{
+    &__title {
+      font-weight: 700;
+      font-size: 32px;
+      color: #2A2A2A;
+    }
+    &__window {
+      width: 512px;
+    }
+    &__prev {
+      left: -30px;
+      }
+    &__next {
+    right: -30px;
+  }
+}
+}
+@media(max-width: 575px){
+  .buy-carousel{
+    min-height: 500px;
+    padding: 25px 0px 35px 0px;
+    &__title {
+      font-weight: 500;
+      font-size: 18px;
+      color: #2A2A2A;
+      margin-bottom: 10px;
+    }
+    &__window {
+      width: 255px;
+    }
+    &__prev {
+      left: -10px;
+      }
+    &__next {
+      right: -10px;
+    }
+}
+.container {
+  width: 320px;
+}
+}

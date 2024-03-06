@@ -1,0 +1,594 @@
+.basket-panel {
+  width: 349px;
+  min-height: 555px;
+  background: #FFFFFF;
+  border: 1px solid rgba(217, 217, 217, 0.39);
+  border-radius: 9px;
+  &__code-product {
+    text-align: right;
+    font-weight: 400;
+    font-size: 12px;
+    color: #2A2A2A;
+    opacity: 0.74;
+    margin-top: 21px;
+    margin-right: 33px;
+  }
+  &__config {
+    display: flex;
+    align-items: center;
+    width: 281px;
+    height: 43px;
+    margin-top: 21px;
+    margin-left: 33px;
+    gap: 20px;
+  }
+  &__people {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__people-img {
+    width: 42px;
+    height: 42px;
+    margin-right: 15px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__number {
+    font-weight: 400;
+    font-size: 15px;
+    color: #2A2A2A;
+  }
+  &__timer {
+    width: 75px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__timer-img {
+    width: 32px;
+    height: 32px;
+    margin-right: 3px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__time {
+    font-weight: 400;
+    font-size: 15px;
+    color: #2A2A2A;
+  }
+  &__age {
+    width: 75px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 15px;
+    color: #2A2A2A;
+  }
+  &__discount {
+    font-weight: 400;
+    font-size: 25px;
+    color: #2A2A2A;
+    text-decoration: line-through;
+    text-align: center;
+    margin-top: 18px;
+  }
+  &__price {
+    font-weight: 700;
+    font-size: 45px;
+    color: #2A2A2A;
+    text-align: center;
+  }
+  &__in-basket {
+    width: 281px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+    border-radius: 9px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-top: 34px;
+    border: none;
+    margin-left: 33px;
+    &:disabled {
+      background: grey;
+    }
+  }
+  &__one-click {
+    width: 281px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F9A43F;
+    border-radius: 9px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #F9A43F;
+    background: transparent;
+    margin-top: 20px;
+    margin-left: 33px;
+  }
+  &__hr {
+    margin-top: 44px;
+  }
+  &__delivery {
+    display: flex;
+    width: 284px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: 700;
+    font-size: 19px;
+    color: #2A2A2A;
+    border: none;
+    background: transparent;
+    padding: 0;
+    top: 6px;
+    margin-left: 33px;
+    &::after {
+      content:'';
+      position: absolute;
+      right: 0px;
+      top: 14px;
+      border-style: solid;
+      border-width: 0.20em 0.20em 0 0;
+      display: inline-block;
+      height: 0.70em;
+      transform: rotate(-45deg);
+      vertical-align: top;
+      width: 0.70em;
+      transition: 0.3s all;
+    }
+  }
+  &__delivery-active {
+    display: flex;
+    width: 284px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: 700;
+    font-size: 19px;
+    color: #2A2A2A;
+    border: none;
+    background: transparent;
+    padding: 0;
+    top: 6px;
+    margin-left: 33px;
+    &::after {
+      content:'';
+      position: absolute;
+      right: 0px;
+      top: 7px;
+      border-style: solid;
+      border-width: 0.20em 0.20em 0 0;
+      display: inline-block;
+      height: 0.70em;
+      transform: rotate(135deg);
+      vertical-align: top;
+      width: 0.70em;
+      transition: 0.3s all;
+    }
+  }
+  &__delivery-descr {
+    height: 0px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, height 0.3s 0.3s ease-in-out;
+    pointer-events: none;
+    width: 284px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 33px;
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      color: #2A2A2A;
+      &:first-child {
+        margin-top: 24px;
+      }
+    }
+  }
+  &__delivery-descr-active {
+    width: 284px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 33px;
+    opacity: 1;
+    transition: height 0.3s ease-in-out, opacity 0.3s 0.3s ease-in-out;
+    pointer-events: all;
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      color: #2A2A2A;
+      &:first-child {
+        margin-top: 24px;
+      }
+    }
+  }
+  &__pay {
+    display: flex;
+    width: 284px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: 700;
+    font-size: 19px;
+    color: #2A2A2A;
+    border: none;
+    background: transparent;
+    padding: 0;
+    top: 6px;
+    margin-left: 33px;
+    &::after {
+      content:'';
+      position: absolute;
+      right: 0px;
+      top: 14px;
+      border-style: solid;
+      border-width: 0.20em 0.20em 0 0;
+      display: inline-block;
+      height: 0.70em;
+      transform: rotate(-45deg);
+      vertical-align: top;
+      width: 0.70em;
+      transition: 0.3s all;
+    }
+  }
+  &__pay-active {
+    display: flex;
+    width: 284px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: 700;
+    font-size: 19px;
+    color: #2A2A2A;
+    border: none;
+    background: transparent;
+    padding: 0;
+    top: 6px;
+    margin-left: 33px;
+    &::after {
+      content:'';
+      position: absolute;
+      right: 0px;
+      top: 7px;
+      border-style: solid;
+      border-width: 0.20em 0.20em 0 0;
+      display: inline-block;
+      height: 0.70em;
+      transform: rotate(135deg);
+      vertical-align: top;
+      width: 0.70em;
+      transition: 0.3s all;
+    }
+  }
+  &__pay-descr {
+    height: 0px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, height 0.3s 0.3s ease-in-out;
+    pointer-events: none;
+    width: 284px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 33px;
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      color: #2A2A2A;
+      &:first-child {
+        margin-top: 24px;
+      }
+    }
+  }
+  &__pay-descr-active {
+    width: 284px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 33px;
+    opacity: 1;
+    transition: height 0.3s ease-in-out, opacity 0.3s 0.3s ease-in-out;
+    pointer-events: all;
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      color: #2A2A2A;
+      &:first-child {
+        margin-top: 24px;
+      }
+    }
+  }
+  &__question {
+    width: 281px;
+    height: 50px;
+    border: 1px solid rgba(42, 42, 42, 0.19);
+    border-radius: 9px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #2A2A2A;
+    opacity: 0.74;
+    background: transparent;
+    margin-left: 33px;
+    margin-top: 18px;
+    margin-bottom: 29px;
+  }
+}
+@media(max-width: 1199px){
+  .basket-panel {
+      width: 320px;
+      min-height: 555px;
+      &__in-basket {
+        margin-left: 20px;
+    
+      }
+      &__one-click {
+        margin-left: 20px;
+      }
+      &__delivery {
+        margin-left: 20px;
+      }
+      &__delivery-active {
+        margin-left: 20px;
+      }
+      &__delivery-descr {
+        margin-left: 20px;
+      }
+      &__delivery-descr-active {
+        margin-left: 20px;
+      }
+      &__pay {
+        margin-left: 20px;
+      }
+      &__pay-active {
+        margin-left: 20px;
+      }
+      &__pay-descr {
+        margin-left: 20px;
+      }
+      &__pay-descr-active {
+        margin-left: 20px;
+      }
+      &__question {
+        margin-left: 20px;
+      }
+    }
+}
+@media(max-width: 991px){
+  .basket-panel {
+      width: 270px;
+      min-height: 468px;
+      &__in-basket {
+        margin-left: 20px;
+    
+      }
+      &__one-click {
+        width: 225px;
+        height: 40px;
+        margin-left: 20px;
+        font-size: 19px;
+      }
+      &__people {
+        width: 70px;
+        margin-right: 6px;
+      }
+      &__people-img {
+        width: 34px;
+        height: 34px;
+      }
+      &__delivery {
+        width: 225px;
+        font-size: 16px;
+        margin-left: 20px;
+      }
+      &__delivery-active {
+        width: 225px;
+        font-size: 16px;
+        margin-left: 20px;
+      }
+      &__delivery-descr {
+        width: 225px;
+        margin-left: 20px;
+        span {
+          font-size: 14px;
+        }
+      }
+      &__delivery-descr-active {
+        width: 225px;
+        margin-left: 20px;
+        span {
+          font-size: 14px;
+        }
+      }
+      &__pay {
+        width: 225px;
+        font-size: 16px;
+        margin-left: 20px;
+      }
+      &__pay-active {
+        width: 225px;
+        font-size: 16px;
+        margin-left: 20px;
+      }
+      &__pay-descr {
+          width: 225px;
+          margin-left: 20px;
+          span {
+            font-size: 14px;
+          }
+      }
+      &__pay-descr-active {
+          width: 225px;
+          margin-left: 20px;
+          span {
+            font-size: 14px;
+          }
+      }
+      &__question {
+        width: 225px;
+        height: 40px;
+        font-size: 18px;
+        margin-left: 22px;
+      }
+      &__in-basket {
+        width: 225px;
+        height: 40px;
+        margin-top: 15px;
+        font-size: 19px;
+      }
+      &__hr {
+        margin-top: 27px;
+      }
+      &__config {
+        width: 225px;
+        margin-left: 28px;
+        gap: 0;
+      }
+      &__code-product {
+        margin-right: 12px;
+      }
+      &__price {
+        font-size: 33px;
+      }
+      &__number {
+        font-size: 14px;
+      }
+      &__timer-img {
+        width: 27px;
+        height: 27px;
+      }
+      &__time {
+        font-size: 14px;
+      }
+      &__age {
+        font-size: 14px;
+      }
+      &__timer {
+        justify-content: initial;
+      }
+    }
+}
+@media(max-width: 767px){
+  .basket-panel {
+      width: 270px;
+      min-height: 468px;
+      margin-left: 15px;
+      margin-top: 20px;
+      &__in-basket {
+        margin-left: 20px;
+    
+      }
+      &__one-click {
+        width: 225px;
+        height: 40px;
+        margin-left: 20px;
+        font-size: 19px;
+      }
+      &__people {
+        width: 70px;
+      }
+      &__people-img {
+        width: 34px;
+        height: 34px;
+      }
+      &__delivery {
+        width: 225px;
+        font-size: 16px;
+        margin-left: 20px;
+      }
+      &__delivery-active {
+        width: 225px;
+        font-size: 16px;
+        margin-left: 20px;
+      }
+      &__delivery-descr {
+        width: 225px;
+        margin-left: 20px;
+        span {
+          font-size: 14px;
+        }
+      }
+      &__delivery-descr-active {
+        width: 225px;
+        margin-left: 20px;
+        span {
+          font-size: 14px;
+        }
+      }
+      &__pay {
+        width: 225px;
+        font-size: 16px;
+        margin-left: 20px;
+      }
+      &__pay-active {
+        width: 225px;
+        font-size: 16px;
+        margin-left: 20px;
+      }
+      &__pay-descr {
+          width: 225px;
+          margin-left: 20px;
+          span {
+            font-size: 14px;
+          }
+      }
+      &__pay-descr-active {
+          width: 225px;
+          margin-left: 20px;
+          span {
+            font-size: 14px;
+          }
+      }
+      &__question {
+        width: 225px;
+        height: 40px;
+        font-size: 18px;
+        margin-left: 22px;
+      }
+      &__in-basket {
+        width: 225px;
+        height: 40px;
+        margin-top: 15px;
+        font-size: 19px;
+      }
+      &__hr {
+        margin-top: 27px;
+      }
+      &__config {
+        width: 225px;
+        margin-left: 28px;
+      }
+      &__code-product {
+        margin-right: 12px;
+      }
+      &__price {
+        font-size: 33px;
+      }
+      &__number {
+        font-size: 14px;
+      }
+      &__timer-img {
+        width: 27px;
+        height: 27px;
+      }
+      &__time {
+        font-size: 14px;
+      }
+      &__age {
+        font-size: 14px;
+      }
+    }
+}

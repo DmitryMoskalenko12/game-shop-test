@@ -1,0 +1,125 @@
+.catalog-choice {
+  position: relative;
+  min-height: 569px;
+  padding-bottom: 85px;
+  padding-top: 104px;
+  background: #E5E5E5;
+  &__wrap {
+    display: grid;
+    grid-template-columns: 549px 272px 272px;
+    grid-template-rows: repeat(2, 217px);
+    grid-auto-rows: 217px;
+    column-gap: 13px;
+    row-gap: 11px;
+    justify-content: center;
+  }
+  &__game {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  &__catalog {
+    position: absolute;
+    top: 40px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #363636;
+  }
+  &__imgwrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 9px;
+      object-fit: cover;
+    }
+  }
+  &__wraplink {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 46px;
+    background: linear-gradient(180deg, #2A2A2A 0%, #2A2A2A 100%);
+    border-radius: 0px 0px 9px 9px;
+  }
+  &__descr {
+    position: absolute;
+    left: 32px;
+    bottom: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.3s all;
+    &:hover {
+      color: #F9A43F;
+      transition: 0.3s all;
+    }
+  }
+}
+@media(max-width: 1199px) {
+  .catalog-choice {
+    &__wrap {
+      grid-template-columns: 422px 244px 244px;
+    }
+  }
+}
+@media(max-width: 991px) {
+  .catalog-choice {
+    &__wrap {
+      display: grid;
+      grid-template-columns: 649px;
+      grid-template-rows: 217px;
+      grid-auto-rows: 217px;
+      row-gap: 11px;
+      justify-content: center;
+    }
+    &__game {
+      grid-column-start: inherit;
+      grid-column-end: inherit;
+      grid-row-start: inherit;
+      grid-row-end: inherit;
+    }
+    &__descr {
+      transition: none;
+      &:hover {
+        color: white;
+        transition: none;
+      }
+    }
+  }
+}
+@media(max-width: 767px) {
+  .catalog-choice {
+    &__wrap {
+      display: grid;
+      grid-template-columns: 500px;
+    }
+  }
+}
+@media(max-width: 575px) {
+  .catalog-choice {
+    padding-bottom: 15px;
+    padding-top: 64px;
+    &__wrap {
+      grid-template-columns: 295px;
+      grid-template-rows: 120px;
+      grid-auto-rows: 120px;
+    }
+    &__descr {
+      font-weight: 700;
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+    &__catalog {
+      top: 25px;
+      font-weight: 700;
+      font-size: 16px;
+      color: #363636;
+    }
+  }
+}
